@@ -34,8 +34,8 @@ module.exports = function udpDirectoryService(options) {
     }, 5000);
     function publishServices() {
         for (var pubserv in publishedServices) {
-            if (publishedServices[pubserv]) {
-                send({ id: id, type: "pub", serviceName: pubserv, data: {} });
+            if(publishedServices.hasOwnProperty(pubserv)){
+                send({ id: id, type: "pub", serviceName: pubserv, data: publishedServices[pubserv] });
             }
         }
         if(logLevel>1)console.log("Published Services: " + JSON.stringify(publishedServices));
