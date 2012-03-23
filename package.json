@@ -1,0 +1,9 @@
+{
+    "name": "udp-directory-service",
+    "version": "0.0.1",
+    "dependencies": {
+        "multicast":"0.0.3",
+        "uuid-pure":"1.0.10"
+    },
+    "main" : "./index"
+}
