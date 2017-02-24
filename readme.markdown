@@ -2,6 +2,8 @@ A directory service built ontop of udp to allow for p2p service discovery on a l
 
 # Installation
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ForbesLindesay/node-udp-directory-service.svg)](https://greenkeeper.io/)
+
     npm install udp-directory-service
 
 # Example Usage
